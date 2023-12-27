@@ -7,7 +7,7 @@ import bodyParser from "body-parser"
 const app = express();
 app.use(bodyParser.json())
 app.use(express.json());
-app.use(cors());
+app.use(cors()); 
 
 
 app.post('/login', async (req, res) => {
@@ -27,7 +27,7 @@ app.post('/login', async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: 'Error en el servidor' });
+    return res.status(500).json({ error: 'Error en el servidor ' });
   }
 });
 
