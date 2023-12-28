@@ -23,7 +23,7 @@ const Login = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3001/login', {
+      const response = await fetch('http://64.23.128.226:3001/login', {
         method: 'POST', // Puedes ajustar el método según lo que requiera tu API
         headers: {
           'Content-Type': 'application/json', // Asegúrate de que el tipo de contenido sea correcto
